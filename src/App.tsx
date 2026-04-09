@@ -101,6 +101,13 @@ function App() {
               />
             )}
 
+            <h4>
+              {card.prices.usd_foil
+                ? `$${card.prices.usd_foil}`
+                : card.prices.usd
+                ? `$${card.prices.usd}`
+                : 'N/A'}
+            </h4>
           </div>
         ))}
 
