@@ -101,13 +101,19 @@ function App() {
               />
             )}
 
-            <h4>
-              {card.prices.usd_foil
-                ? `$${card.prices.usd_foil}`
-                : card.prices.usd
-                ? `$${card.prices.usd}`
-                : 'N/A'}
-            </h4>
+            <div className="PriceContainer">
+              <a
+                href={card.purchase_uris?.tcgplayer}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {card.prices.usd_foil
+                  ? `$${card.prices.usd_foil}`
+                  : card.prices.usd
+                  ? `$${card.prices.usd}`
+                  : 'N/A'}
+              </a>
+            </div>
           </div>
         ))}
 
