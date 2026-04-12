@@ -2,12 +2,13 @@
   width: 100%;
   height: 30vh;
   overflow: hidden;
+  background: rgba(196, 134, 220, 1);
 }
 
 .bannerImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -18,7 +19,7 @@
   border-radius: 10px;
   border: 0px;
 
-  background: rgb(201, 128, 201);
+  background: rgba(196, 134, 220, 1);
   color: rgba(255, 255, 255, 0.849);
 
   cursor: pointer;
@@ -27,7 +28,7 @@
 
 /* Hover effect */
 .searchButton:hover {
-  background: rgba(201, 128, 201, 0.67);
+  background: rgba(196, 134, 220, 0.67);
   transform: translateY(2px);
 }
 

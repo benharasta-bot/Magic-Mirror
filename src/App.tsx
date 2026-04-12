@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import bgImg from './assets/MMdraft.png'
 import './App.css'
+
 // Local host by "npm run dev" in terminal, then open http://localhost:5173/ in browser to view app
 function App() {
   const [searchQuery, setSearchQuery] = useState('')
@@ -52,7 +53,8 @@ function App() {
       {/* SEARCH */}
       <div className="searchContainer">
 
-        <h2>Input Card Name</h2>
+        <h2>INPUT CARD NAME</h2>
+
 
         <input
           type="text"
