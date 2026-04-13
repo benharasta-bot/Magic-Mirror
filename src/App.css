@@ -12,6 +12,11 @@
   display: block;
 }
 
+.title {
+  font-size: 48px;
+  animation: titleShine 1s ease-in-out infinite alternate;
+}
+
 .searchButton {
   font-size: 15px;
   padding: 10px 10px;
@@ -80,6 +85,10 @@
 }
 
 
+@keyframes titleShine {
+  from {color: rgba(201, 128, 201, 1);}
+  to {color: rgba(201, 128, 201, 0.5);}
+}
 
 #center {
   display: flex;
@@ -95,30 +104,7 @@
   }
 }
 
-#next-steps {
-  display: flex;
-  border-top: 1px solid var(--border);
-  text-align: left;
 
-  & > div {
-    flex: 1 1 0;
-    padding: 32px;
-    @media (max-width: 1024px) {
-      padding: 24px 20px;
-    }
-  }
-
-  .icon {
-    margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 
 #docs {
   border-right: 1px solid var(--border);

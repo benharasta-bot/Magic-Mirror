@@ -53,7 +53,8 @@ function App() {
       {/* SEARCH */}
       <div className="searchContainer">
 
-        <h2>INPUT CARD NAME</h2>
+        <h2 className="title"
+          >INPUT CARD NAME</h2>
 
 
         <input
