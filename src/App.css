@@ -1,3 +1,8 @@
+:root {
+  --bg: #33322C;
+  --headerbg: #94873F;
+}
+
 .banner {
   width: 100%;
   height: 30vh;
@@ -13,6 +18,7 @@
 }
 
 .title {
+  margin-top: 30px;
   font-size: 48px;
   animation: titleShine 1s ease-in-out infinite alternate;
 }
@@ -47,7 +53,7 @@
   display: flex;
   flex-direction: column; 
   gap: 8px;  
-  background: linear-gradient(to bottom, rgba(196, 134, 220, 1), #e6bfe9,  rgb(255, 255, 255));
+  background: linear-gradient(to bottom, rgba(196, 134, 220, 1) 20%, var(--bg) 60%);
   align-items: center;    
 }
 
@@ -66,8 +72,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: var(--bg);
 
   height: 60px;   
+}
+
+.cardImage {
+  background: var(--bg);
+  border-radius: 33px;   
+  border: 10px solid transparent;
+  background-blend-mode: multiply;
 }
 
 .PriceContainer a {
@@ -77,6 +91,7 @@
   color: rgb(201, 128, 201);
   text-decoration: underline;
   font-weight: bold;
+  background: var(--bg);
 }
 
 .PriceContainer a:hover {
